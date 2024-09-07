@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
+                "file": "Посилання/Театр як інструмент суспільних перетворень.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "index.md",
+                "file": "Посилання/Театр як інструмент суспільних перетворень.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "index.md",
+                "file": "Посилання/Театр як інструмент суспільних перетворень.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "index.md"
+                "file": "Посилання/Театр як інструмент суспільних перетворень.md"
               }
             }
           }
@@ -148,8 +148,17 @@
   },
   "active": "049f2c81155b8714",
   "lastOpenFiles": [
-    "README.md",
     "index.md",
+    "README.md",
+    "Нотатки/Онтологія середовища.md",
+    "Чернетки",
+    "Посилання/Театр як інструмент суспільних перетворень.md",
+    "Нотатки/Штучне сонце жаху.md",
+    "Люди/Тристан Гарсія.md",
+    "Люди",
+    "Посилання",
+    "Начерки",
+    "Нотатки",
     "draft.md",
     "non-draft.md",
     "Posts/Note.md",
