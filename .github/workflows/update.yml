@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+name: Update parent repository
 
 on:
   push:
@@ -6,8 +6,8 @@ on:
       - main
 
 jobs:
-  build:
-    runs-on: ubuntu-22.04
+  update:
+    runs-on: ubuntu-latest
     defaults:
       run:
         shell: bash
@@ -23,14 +23,6 @@ jobs:
         run: |
           git pull --recurse-submodules
           git submodule update --remote --recursive
- 
-  deploy:
-    needs: build
-    runs-on: ubuntu-22.04
-    defaults:
-      run:
-        shell: bash
-    steps:
       - name: Commit content update
         run: |
           git config --global user.name 'GitHub Actions - update content'
