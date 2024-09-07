@@ -1,0 +1,42 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - name: Checkout the parent repository
+        uses: actions/checkout@v4
+        with:
+          repository: mykhailo-ziatin/_
+          token: ${{ secrets.CI_TOKEN }}
+          fetch-depth: 0 # Fetch all history for git info
+          submodules: true
+      - name: Git Submodule Update
+        run: |
+          git pull --recurse-submodules
+          git submodule update --remote --recursive
+ 
+  deploy:
+    needs: build
+    runs-on: ubuntu-22.04
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - name: Commit content update
+        run: |
+          git config --global user.name 'GitHub Actions - update content'
+          git config --global user.email 'actions@github.com'
+          git add --all content
+          git commit -am "Auto updated content submodule" && git push || echo "No changes to commit"
+      - name: Push changes
+        run: |
+          git push
