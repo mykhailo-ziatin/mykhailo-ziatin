@@ -1,5 +1,7 @@
 ---
-title: Mykhailo Ziatin
+title: Місце допитливості
 publish: "true"
 ---
-This page is intentionally left blank.
+# Місце допитливості
+
+Ця сторінка навмисно залишена пустою.
